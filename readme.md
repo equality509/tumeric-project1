@@ -17,7 +17,7 @@ I choose to use the news API for my first project.  My expectations are to be ab
 
 ### Wireframes 
 
-![SOme text](https://docs.google.com/drawings/d/1GHLpEAon9jDXMVA8BPNZfKO5MUebBpVus9BYY_gLmDs/edit?usp=sharing)
+![SOme text](https://i.imgur.com/gffEchd.png)
 
 ### Daily Plan
 
