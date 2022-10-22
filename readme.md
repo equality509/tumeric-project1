@@ -1,5 +1,5 @@
-# The Name of My App
-Weather USA
+# Weather USA
+
 
 
 I choose to use the news API for my first project.  My expectations are to be able to find all articles that include a specific keyword in their title.  This keyword will be inserted by the user into a search box input in a form.
