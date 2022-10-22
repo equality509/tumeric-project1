@@ -1,4 +1,4 @@
-# Weather USA
+# News USA
 
 
 
@@ -17,7 +17,7 @@ I choose to use the news API for my first project.  My expectations are to be ab
 
 ### Wireframes 
 
-![SOme text](https://i.imgur.com/gffEchd.png)
+![SOme text](https://i.imgur.com/8tCIU7e.png[/img])
 
 ### Daily Plan
 
