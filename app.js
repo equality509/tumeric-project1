@@ -1,45 +1,54 @@
 const API_Key= '4182aac5ee134998aa0b0a50cd07e1f3'
 
-const baseURL=
+const BASE_URL='https://newsapi.org/v2/everything?'
 
-function handleGetData(city) {
-    $.ajax(BASE_URL + `q=${city}&appid=` + API_KEY)
+//https://newsapi.org/v2/everything?q=bitcoin&apiKey
+
+
+// const $city = $('#city')
+
+const newsList = document.querySelector('#city')
+newsList.innerHTML = ''
+
+
+
+function handleGetData(search) {
+    $.ajax(BASE_URL + `q=${search}&apiKey=` + API_Key)
     .then(function(data) {
         console.log('Data: ', data);
 
-        const $city = $('#city')
 
-        $city.empty()
+        data.articles.forEach(article =>{
+            let li = document.createElement('li');
+            let a = document.createElement('a');
+            a.setAttribute('href', article.url );
+            a.setAttribute('target', '_blank');
+            a.textContent = article.title;
+            li.appendChild(a);
+            newsList.appendChild(li);
+
+        })
+        // const $city = $('#city')
+
+        // $city.empty()
     
-        $city.html(`
-        <h1>City: ${data.name}</h1>
-        `)
+        // newsList.html(`
+        // <h1>City: ${}</h1>
+        // `)
 
 
-        const $temp = $('#temp');
+        // const $temp = $('#temp');
 
-        $temp.empty()
+        // $temp.empty()
 
-        $temp.html(`
-        <h1>Temperature: ${data.main.temp}</h1>
-        `)
+        // $temp.html(`
+        // <h1>Temperature: ${data.main.temp}</h1>
+        // `)
 
-        const $index = $('#index')
-
-         $index.empty()
-
-        $index.html(`
-        <h1>Feels Like: ${data.main.feels_like}</h1>
-        `)
+       
 
 
-        const $desc = $('#desc')
-
-        $desc.empty()
-
-        $desc.html(`
-        <h1>Weather: ${data.weather[0].main}</h1>
-        `)
+    
 
 
 
