@@ -26,11 +26,11 @@ function handleGetData(search) {
             a.textContent = article.title;
             li.appendChild(a);
             newsList.appendChild(li);
-
+            // newsList.empty()
         })
         // const $city = $('#city')
 
-        // $city.empty()
+        //    newsList.empty()
     
         // newsList.html(`
         // <h1>City: ${}</h1>
