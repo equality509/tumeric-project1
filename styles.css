@@ -13,6 +13,7 @@ body {
   justify-content: center;
   margin: 0;
   background-color: blue;
+  background-image: url(blog6.jpeg);
 }
 
 #news {
@@ -41,7 +42,7 @@ body {
   padding: 10px;
 }
 
-#results {
+.results  {
   border: 1px solid;
   /* width: 400px; */
   display: flex;
@@ -51,4 +52,35 @@ body {
   border-radius: 3px;
   background-color: lightgray;
   padding-left: 10px;
+  background-image: url(blog6.jpeg);
+  color: aliceblue;
+  
+}
+
+
+.results a {
+  /* border: 1px solid;
+  /* width: 400px; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  background-color: lightgray;
+  padding-left: 10px; */
+  background-image: url(blog6.jpeg);
+  color: aliceblue;
+  
+}
+
+.news {
+  background-image: url(news.jpeg);
+  background-size: 100%;
+  border: 1px solid;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
 }

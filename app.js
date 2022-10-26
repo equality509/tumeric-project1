@@ -8,7 +8,7 @@ const BASE_URL='https://newsapi.org/v2/everything?'
 // const $city = $('#city')
 
 const newsList = document.querySelector('#city')
-newsList.innerHTML = ''
+
 
 
 
@@ -17,6 +17,7 @@ function handleGetData(search) {
     .then(function(data) {
         console.log('Data: ', data);
 
+        newsList.innerHTML = ''
 
         data.articles.forEach(article =>{
             let li = document.createElement('li');
@@ -28,6 +29,20 @@ function handleGetData(search) {
             newsList.appendChild(li);
             // newsList.empty()
         })
+
+
+        // data.articles.forEach(article =>{
+        //     let li = $('<li>list</li>');
+        //     let a = $('<a>');
+        //     a.setAttribute('href', article.url );
+        //     a.setAttribute('target', '_blank');
+        //     a.textContent = article.title;
+        //     li.appendChild(a);
+        //     newsList.appendChild(li);
+        //     // newsList.empty()
+        // })
+
+
         // const $city = $('#city')
 
         //    newsList.empty()
