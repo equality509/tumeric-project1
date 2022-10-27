@@ -12,8 +12,28 @@ body {
   align-items: center;
   justify-content: center;
   margin: 0;
-  background-color: blue;
-  background-image: url(blog6.jpeg);
+  /* background-color: blue; */
+  background-image: url(bak.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.im {
+  background-image: url(News.jpeg);
+  height: 500px;
+  width: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: -200px; */
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space;
 }
 
 #news {
@@ -52,7 +72,7 @@ body {
   border-radius: 3px;
   background-color: lightgray;
   padding-left: 10px;
-  background-image: url(blog6.jpeg);
+  /* background-image: url(blog6.jpeg); */
   color: aliceblue;
   
 }
@@ -68,9 +88,9 @@ body {
   border-radius: 3px;
   background-color: lightgray;
   padding-left: 10px; */
-  background-image: url(blog6.jpeg);
-  color: aliceblue;
-  
+  /* background-image: url(blog6.jpeg); */
+  /* color: aliceblue;
+   */
 }
 
 .news {
