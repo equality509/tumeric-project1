@@ -20,12 +20,13 @@ body {
 
 
 .im {
-  background-image: url(News.jpeg);
-  height: 500px;
+  /* background-image: url(News.jpeg); */
+  /* height: 500px;
   width: 800px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
   /* background-position: -200px; */
+  
   
 }
 
@@ -94,7 +95,7 @@ body {
 }
 
 .news {
-  background-image: url(news.jpeg);
+  /* background-image: url(news.jpeg); */
   background-size: 100%;
   border: 1px solid;
   width: 800px;
