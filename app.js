@@ -85,3 +85,17 @@ $("input[type=submit]").on("click", (event) => {
     // update the screen
     handleGetData(inputText)
 })
+
+const ran = Math.floor(Math.random() * 3) + 1
+console.log(ran)
+if (ran === 1) {
+    console.log( 'pic1' )
+} else if ( ran === 2 ) {
+    console.log( 'pic2')
+} else if ( ran === 3) {
+    console.log(' pic 3')}
+
+
+    function add (){
+        return 5+6
+    }
