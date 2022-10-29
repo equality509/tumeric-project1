@@ -10,8 +10,6 @@ const BASE_URL='https://newsapi.org/v2/everything?'
 const newsList = document.querySelector('#city')
 
 
-
-
 function handleGetData(search) {
     $.ajax(BASE_URL + `q=${search}&apiKey=` + API_Key)
     .then(function(data) {
@@ -60,18 +58,10 @@ function handleGetData(search) {
         // <h1>Temperature: ${data.main.temp}</h1>
         // `)
 
-       
-
-
-    
-
-
 
     }, function(error) {
         console.log('Error: ', error);
     })
-
-
 }
 
 $("input[type=submit]").on("click", (event) => {
@@ -99,3 +89,7 @@ if (ran === 1) {
     function add (){
         return 5+6
     }
+
+
+
+    //lines 21 - 27 googled//
