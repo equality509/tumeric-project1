@@ -7,7 +7,7 @@ const BASE_URL='https://newsapi.org/v2/everything?'
 
 
 //selecting and naming my html id
-const newsList = document.querySelector('#city')
+const newsList = $(".city")
 
 //function that requests information from the API
 function handleGetData(search) {
@@ -30,33 +30,14 @@ function handleGetData(search) {
             // setting the anchor links text to the title of the article 
             a.textContent = article.title;
             // appending the anchor element to the list element
-            li.appendChild(a);
+            li.append(a);
             // apppending the list element to my querySelector
-            newsList.appendChild(li);
+            newsList.append(li);
             // newsList.empty()
         })
 
 
-        // data.articles.forEach(article =>{
-        //     let li = $('<li>list</li>');
-        //     let a = $('<a>');
-        //     a.setAttribute('href', article.url );
-        //     a.setAttribute('target', '_blank');
-        //     a.textContent = article.title;
-        //     li.appendChild(a);
-        //     newsList.appendChild(li);
-        //     // newsList.empty()
-        // })
-
-
-        // const $city = $('#city')
-
-        //    newsList.empty()
-    
-        // newsList.html(`
-        // <h1>City: ${}</h1>
-        // `)
-
+       
         //error handling
     }, function(error) {
         console.log('Error: ', error);
@@ -94,3 +75,24 @@ $("input[type=submit]").on("click", (event) => {
 
 
     //lines 21 - 27 googled//
+
+
+     // data.articles.forEach(article =>{
+        //     let li = $('<li>list</li>');
+        //     let a = $('<a>');
+        //     a.setAttribute('href', article.url );
+        //     a.setAttribute('target', '_blank');
+        //     a.textContent = article.title;
+        //     li.appendChild(a);
+        //     newsList.appendChild(li);
+        //     // newsList.empty()
+        // })
+
+
+        // const $city = $('#city')
+
+        //    newsList.empty()
+    
+        // newsList.html(`
+        // <h1>City: ${}</h1>
+        // `)
